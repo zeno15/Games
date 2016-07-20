@@ -2,9 +2,12 @@
 
 #include <string>
 
-class Manager {
-public:
-	Manager();
-	~Manager();
-};
+namespace Common {
 
+	class Manager {
+	public:
+		Manager();
+		~Manager();
+	};
+
+}

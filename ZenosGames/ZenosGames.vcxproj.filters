@@ -19,6 +19,18 @@
     <Filter Include="Resources\Textures\MineSweeper">
       <UniqueIdentifier>{37a3e3f7-d23c-45b3-9330-ea4e9bbd6f3a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\Fonts\Tetris">
+      <UniqueIdentifier>{93963257-8bdb-4d67-88c6-f3709062e73e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Textures\Tetris">
+      <UniqueIdentifier>{534384e5-efd1-4d84-a1d0-265e2903819a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Fonts\SpaceInvaders">
+      <UniqueIdentifier>{eb2cc006-4602-436c-b579-6839cfa79ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Textures\SpaceInvaders">
+      <UniqueIdentifier>{99fc2948-8c3e-413a-839e-48c00b9bddde}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\Resources\Fonts\MineSweeper\arial.ttf">

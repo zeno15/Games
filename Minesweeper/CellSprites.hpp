@@ -11,7 +11,7 @@ namespace Common {
 
 namespace MineSweeper {
 
-	class CellSprites : public Manager {
+	class CellSprites : public Common::Manager {
 	public:
 		enum Sprite {
 			Mines_0,

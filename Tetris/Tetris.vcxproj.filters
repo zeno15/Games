@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{33a875bf-8b74-4457-8bca-8765eeef19a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Components">
+      <UniqueIdentifier>{393e42cf-bd11-44db-a34c-9865f6be274a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Tetronimo.cpp">
+      <Filter>Game Components</Filter>
+    </ClCompile>
+    <ClCompile Include="TetronimoData.cpp" />
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameScene.hpp">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Tetronimo.hpp">
+      <Filter>Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="TetronimoData.hpp" />
+  </ItemGroup>
+</Project>

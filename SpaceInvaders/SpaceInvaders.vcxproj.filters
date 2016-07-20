@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{ae36cb98-c239-4180-8f6b-cf2df4fbca85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Components">
+      <UniqueIdentifier>{03e47a5b-8ad5-42c3-9b67-4c281f9fc87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{db91a065-76ad-4dcd-b870-671160993c03}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBoard.cpp">
+      <Filter>Game Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AlienHorde.cpp">
+      <Filter>Game Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicAlien.cpp">
+      <Filter>Game Components</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectileManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Game Components</Filter>
+    </ClCompile>
+    <ClCompile Include="NotificationManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameScene.hpp">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBoard.hpp">
+      <Filter>Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AlienHorde.hpp">
+      <Filter>Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicAlien.hpp">
+      <Filter>Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectileManager.hpp">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.hpp">
+      <Filter>Game Components</Filter>
+    </ClInclude>
+    <ClInclude Include="NotificationManager.hpp">
+      <Filter>Managers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

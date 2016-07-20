@@ -7,6 +7,12 @@
     <Filter Include="Scenes">
       <UniqueIdentifier>{6997d4e0-ce1d-4761-a12a-559a99fd949c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Base Classes">
+      <UniqueIdentifier>{663d43e5-8118-4ad1-b233-42d50e420959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{15e965e5-2547-42da-a3fb-49696ec0b808}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InstanceCollection.hpp">
@@ -28,6 +34,12 @@
       <Filter>Scenes</Filter>
     </ClInclude>
     <ClInclude Include="Application.hpp" />
+    <ClInclude Include="Entity.hpp">
+      <Filter>Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ColourUtility.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InstanceCollection.cpp">
@@ -49,5 +61,8 @@
       <Filter>Scenes</Filter>
     </ClCompile>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="ColourUtility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -164,6 +164,15 @@
     <ProjectReference Include="..\Minesweeper\Minesweeper.vcxproj">
       <Project>{edf370dd-dc16-4d78-b6cb-2bf222cff7a8}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\Monopoly\Monopoly.vcxproj">
+      <Project>{9f811c00-dd90-41ea-aad0-7f40098132e0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SpaceInvaders\SpaceInvaders.vcxproj">
+      <Project>{1833dfde-d65c-478d-ac00-52dafabecd95}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tetris\Tetris.vcxproj">
+      <Project>{b2bfd8b6-45fd-4bd4-a37e-1a132343aced}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ZenosGames.cpp" />

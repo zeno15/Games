@@ -8,13 +8,16 @@ namespace Common {
 	class InstanceCollection;
 }
 
-namespace Monopoly {
+namespace SpaceInvaders {
 
 	class NotificationManager : public Common::Manager {
 	public:
 		friend class Common::InstanceCollection;
 
-		static const std::string Name;
+		const static std::string Name;
+
+		std::function<void(void)> NotifyPlayerWon;
+		std::function<void(void)> NotifyPlayerLost;
 
 	private:
 		NotificationManager();
