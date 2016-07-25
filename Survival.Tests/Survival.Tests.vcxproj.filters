@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{60a9916c-c554-4648-a91b-f79afb69f325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Level Components">
+      <UniqueIdentifier>{e0ee8a6a-b3c5-4cb4-8e33-36b0055cbb05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mocks">
+      <UniqueIdentifier>{15b7d250-5d7a-48d7-a908-56f8fbd135e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mocks\Level Components">
+      <UniqueIdentifier>{c303c037-5555-47fd-a96f-5546622f702f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Helpers">
+      <UniqueIdentifier>{a7622b5c-7fd9-4df6-8699-b6d834e5555f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mocks\Entities">
+      <UniqueIdentifier>{a0887692-b561-4dbd-944c-f303e2f1cfb7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="ToString.hpp">
+      <Filter>Test Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="MockEntity.hpp">
+      <Filter>Mocks\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="MockMobileEntity.hpp">
+      <Filter>Mocks\Entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LevelTests.cpp">
+      <Filter>Tests\Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="TileTests.cpp">
+      <Filter>Tests\Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="EntityTests.cpp">
+      <Filter>Tests\Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="MockEntity.cpp">
+      <Filter>Mocks\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="MockMobileEntity.cpp">
+      <Filter>Mocks\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceCollectionTests.cpp">
+      <Filter>Tests\Level Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{3fa7bc78-0bd1-4edb-8891-ce083a886652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level Components">
+      <UniqueIdentifier>{f73860b0-5f49-4313-870d-99da610d014d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{0987502a-e270-4b3f-899a-3316ca98fbbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{0788cb11-9a50-4338-8203-70ce487a28df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Stationary Entities">
+      <UniqueIdentifier>{db53f86b-346a-49fe-a5cc-0ce0c620a2e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Mobile Entities">
+      <UniqueIdentifier>{eacee387-0783-4de6-a4c1-377da1ff0d89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="NotificationManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="StationaryEntity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildingManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="MobileEntity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Entities\Stationary Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Entities\Mobile Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceCollection.cpp">
+      <Filter>Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Airlock.cpp">
+      <Filter>Entities\Stationary Entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameScene.hpp">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.hpp">
+      <Filter>Level Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.hpp">
+      <Filter>Level Components</Filter>
+    </ClInclude>
+    <ClInclude Include="NotificationManager.hpp">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="StationaryEntity.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildingManager.hpp">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.hpp">
+      <Filter>Level Components</Filter>
+    </ClInclude>
+    <ClInclude Include="MobileEntity.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.hpp">
+      <Filter>Entities\Stationary Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityGhost.hpp">
+      <Filter>Entities\Stationary Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Entities\Mobile Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelManager.hpp">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceCollection.hpp">
+      <Filter>Level Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Airlock.hpp">
+      <Filter>Entities\Stationary Entities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

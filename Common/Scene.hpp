@@ -2,6 +2,7 @@
 
 #include <string>
 
+#include <SFML\System.hpp>
 #include <SFML\Graphics.hpp>
 
 namespace Common {

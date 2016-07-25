@@ -1,6 +1,6 @@
 #include "NotificationManager.hpp"
 
-namespace Monopoly {
+namespace MineSweeper {
 
 	const std::string NotificationManager::Name = "NotificationManager";
 

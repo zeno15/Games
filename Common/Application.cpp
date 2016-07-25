@@ -50,7 +50,7 @@ namespace Common {
 				ups = upsAccumulator;
 				fpsAccumulator = 0;
 				upsAccumulator = 0;
-				//std::cout << "FPS: " << fps << " UPS: " << ups << std::endl;
+				std::cout << "FPS: " << fps << " UPS: " << ups << std::endl;
 			}
 
 			while (accumulator >= dt) {

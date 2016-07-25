@@ -40,6 +40,12 @@
     <ClInclude Include="ColourUtility.hpp">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="Orientation.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorMath.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InstanceCollection.cpp">
@@ -62,6 +68,12 @@
     </ClCompile>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="ColourUtility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Orientation.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorMath.cpp">
       <Filter>Utility</Filter>
     </ClCompile>
   </ItemGroup>

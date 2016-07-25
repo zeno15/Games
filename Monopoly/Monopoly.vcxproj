@@ -140,11 +140,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Minesweeper\NotificationManager.hpp" />
+    <ClInclude Include="Board.hpp" />
     <ClInclude Include="GameScene.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Minesweeper\NotificationManager.cpp" />
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="GameScene.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

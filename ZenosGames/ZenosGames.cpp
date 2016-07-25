@@ -22,6 +22,20 @@
 // Monopoly
 #include "../Monopoly/GameScene.hpp"
 
+// Survival
+#include "../Survival/GameScene.hpp"
+#include "../Survival/NotificationManager.hpp"
+#include "../Survival/BuildingManager.hpp"
+#include "../Survival/LevelManager.hpp"
+
+// Miner
+#include "../Miner/GameScene.hpp"
+#include "../Miner/BuildManager.hpp"
+
+// Pokemon
+#include "../Pokemon/GameScene.hpp"
+#include "../Pokemon/RegionManager.hpp"
+
 int main(int argc, char **_argv) {
 	Common::InstanceCollection::registerInstance<Common::Application>();
 	Common::InstanceCollection::registerInstance<Common::FontManager>();
@@ -32,8 +46,11 @@ int main(int argc, char **_argv) {
 	const std::string SpaceInvaders = "SpaceInvaders";
 	const std::string Tetris = "Tetris";
 	const std::string Monopoly = "Monopoly";
+	const std::string Survival = "Survival";
+	const std::string Miner = "Miner";
+	const std::string Pokemon = "Pokemon";
 
-	std::string game = Monopoly;
+	std::string game = Pokemon;
 	Common::Scene *gameScene;
 	
 	if (game == MineSweeper) {
@@ -55,6 +72,20 @@ int main(int argc, char **_argv) {
 		Common::InstanceCollection::registerInstance<SpaceInvaders::NotificationManager>();
 
 		gameScene = new SpaceInvaders::GameScene();
+	}
+	else if (game == Survival) {
+		Common::InstanceCollection::registerInstance<Survival::NotificationManager>();
+		Common::InstanceCollection::registerInstance<Survival::BuildingManager>();
+		Common::InstanceCollection::registerInstance<Survival::LevelManager>();
+		gameScene = new Survival::GameScene();
+	}
+	else if (game == Miner) {
+		gameScene = new Miner::GameScene();
+		Common::InstanceCollection::registerInstance<Miner::BuildManager>();
+	}
+	else if (game == Pokemon) {
+		Common::InstanceCollection::registerInstance<Pokemon::RegionManager>();
+		gameScene = new Pokemon::GameScene();
 	}
 	else {
 		throw std::runtime_error("No Game selected for startup");

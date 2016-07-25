@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{753316d3-7756-4d6c-bf71-7bc1275cdfb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{999137a1-ff34-447e-b8f0-6a8fa9b4daec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level Components">
+      <UniqueIdentifier>{e1062777-ce6e-4431-a759-164e85866d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{7b310a2c-87b9-484f-9793-990767ed826c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameScene.hpp">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Level Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.hpp">
+      <Filter>Level Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Region.hpp">
+      <Filter>Level Components</Filter>
+    </ClInclude>
+    <ClInclude Include="MineralDeposit.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Miner.hpp" />
+    <ClInclude Include="BuildManager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Region.cpp">
+      <Filter>Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Level Components</Filter>
+    </ClCompile>
+    <ClCompile Include="MineralDeposit.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Miner.cpp" />
+    <ClCompile Include="BuildManager.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{9f4e2b5a-8f50-42b5-8ee4-0de96b505460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Region">
+      <UniqueIdentifier>{370a75cb-b5b2-4b38-b6d7-b64d8bae8aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{c85c8698-f4a5-454c-b2fc-c65261b14a74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{36f30585-fa39-4dfe-8f4a-76d2910c4af7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Region\Tiles">
+      <UniqueIdentifier>{409748dc-4d98-4f35-aeec-095029ab98d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Region.cpp">
+      <Filter>Region</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>Region</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="WanderingCharacter.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionJumper.cpp">
+      <Filter>Region\Tiles</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameScene.hpp">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Region.hpp">
+      <Filter>Region</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.hpp">
+      <Filter>Region</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionManager.hpp">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="WanderingCharacter.hpp">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionJumper.hpp">
+      <Filter>Region\Tiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -161,14 +161,23 @@
     <ProjectReference Include="..\Common\Common.vcxproj">
       <Project>{2d33607f-33c6-4bae-a690-fd9d251ea55c}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\Miner\Miner.vcxproj">
+      <Project>{278a19cf-f71f-4b13-8d64-8f30a9bddce3}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\Minesweeper\Minesweeper.vcxproj">
       <Project>{edf370dd-dc16-4d78-b6cb-2bf222cff7a8}</Project>
     </ProjectReference>
     <ProjectReference Include="..\Monopoly\Monopoly.vcxproj">
       <Project>{9f811c00-dd90-41ea-aad0-7f40098132e0}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\Pokemon\Pokemon.vcxproj">
+      <Project>{3e2ce2ce-4c55-4298-a1db-fa9fa45850e3}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\SpaceInvaders\SpaceInvaders.vcxproj">
       <Project>{1833dfde-d65c-478d-ac00-52dafabecd95}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Survival\Survival.vcxproj">
+      <Project>{a755fb92-e9c9-4015-9d38-3eb4d62750c9}</Project>
     </ProjectReference>
     <ProjectReference Include="..\Tetris\Tetris.vcxproj">
       <Project>{b2bfd8b6-45fd-4bd4-a37e-1a132343aced}</Project>

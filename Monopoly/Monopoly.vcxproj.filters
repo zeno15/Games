@@ -12,16 +12,12 @@
     <ClCompile Include="GameScene.cpp">
       <Filter>Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Minesweeper\NotificationManager.cpp">
-      <Filter>Managers</Filter>
-    </ClCompile>
+    <ClCompile Include="Board.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameScene.hpp">
       <Filter>Scenes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Minesweeper\NotificationManager.hpp">
-      <Filter>Managers</Filter>
-    </ClInclude>
+    <ClInclude Include="Board.hpp" />
   </ItemGroup>
 </Project>

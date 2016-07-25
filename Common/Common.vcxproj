@@ -25,9 +25,11 @@
     <ClInclude Include="FontManager.hpp" />
     <ClInclude Include="InstanceCollection.hpp" />
     <ClInclude Include="Manager.hpp" />
+    <ClInclude Include="Orientation.hpp" />
     <ClInclude Include="Scene.hpp" />
     <ClInclude Include="SceneManager.hpp" />
     <ClInclude Include="TextureManager.hpp" />
+    <ClInclude Include="VectorMath.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
@@ -35,9 +37,11 @@
     <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="InstanceCollection.cpp" />
     <ClCompile Include="Manager.cpp" />
+    <ClCompile Include="Orientation.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="VectorMath.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{2D33607F-33C6-4BAE-A690-FD9D251EA55C}</ProjectGuid>
