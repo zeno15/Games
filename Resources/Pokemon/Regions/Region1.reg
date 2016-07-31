@@ -1,0 +1,45 @@
+{
+	"RegionName": "Region1",
+	"Width": 12,
+	"Height": 8,
+	"Entities": [{
+		"Type": "RegionJumper",
+		"RegionX": 2,
+		"RegionY": 2,
+		"TargetRegion": "Region2",
+		"TargetRegionX": 4,
+		"TargetRegionY": 3
+	}, {
+		"Type": "BasicTile",
+		"RegionX": 0,
+		"RegionY": 2
+	}, {
+		"Type": "BasicTile",
+		"RegionX": 1,
+		"RegionY": 2
+	}, {
+		"Type": "BasicTile",
+		"RegionX": 0,
+		"RegionY": 1
+	}, {
+		"Type": "BasicTile",
+		"RegionX": 1,
+		"RegionY": 1
+	}, {
+		"Type": "BasicTile",
+		"RegionX": 2,
+		"RegionY": 1
+	}, {
+		"Type": "BasicTile",
+		"RegionX": 0,
+		"RegionY": 0
+	}, {
+		"Type": "BasicTile",
+		"RegionX": 1,
+		"RegionY": 0
+	}, {
+		"Type": "BasicTile",
+		"RegionX": 2,
+		"RegionY": 0
+	}]
+}

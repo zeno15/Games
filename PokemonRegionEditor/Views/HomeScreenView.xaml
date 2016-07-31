@@ -1,0 +1,31 @@
+﻿<UserControl 
+    x:Class="PokemonRegionEditor.Views.HomeScreenView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:PokemonRegionEditor.Views"
+    xmlns:ViewModels="clr-namespace:PokemonRegionEditor.ViewModels"
+    xmlns:Views="clr-namespace:PokemonRegionEditor.Views"
+    mc:Ignorable="d" 
+    d:DataContext="{d:DesignInstance Type=ViewModels:HomeScreenViewModel, IsDesignTimeCreatable=False}" 
+    d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Button 
+            Grid.Column="0" 
+            Content="Create New Region"
+            Command="{Binding CreateNewRegionCommand}"/>
+        <Button 
+            Grid.Column="1" 
+            Content="Edit ExistingRegion"
+            Command="{Binding EditExistingRegionCommand}"/>
+    </Grid>
+</UserControl>

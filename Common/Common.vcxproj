@@ -23,6 +23,7 @@
     <ClInclude Include="ColourUtility.hpp" />
     <ClInclude Include="Entity.hpp" />
     <ClInclude Include="FontManager.hpp" />
+    <ClInclude Include="GUIBase.hpp" />
     <ClInclude Include="InstanceCollection.hpp" />
     <ClInclude Include="Manager.hpp" />
     <ClInclude Include="Orientation.hpp" />
@@ -35,6 +36,7 @@
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="ColourUtility.cpp" />
     <ClCompile Include="FontManager.cpp" />
+    <ClCompile Include="GUIBase.cpp" />
     <ClCompile Include="InstanceCollection.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Orientation.cpp" />

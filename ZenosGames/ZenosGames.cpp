@@ -36,6 +36,8 @@
 #include "../Pokemon/GameScene.hpp"
 #include "../Pokemon/RegionManager.hpp"
 
+
+
 int main(int argc, char **_argv) {
 	Common::InstanceCollection::registerInstance<Common::Application>();
 	Common::InstanceCollection::registerInstance<Common::FontManager>();
@@ -85,6 +87,7 @@ int main(int argc, char **_argv) {
 	}
 	else if (game == Pokemon) {
 		Common::InstanceCollection::registerInstance<Pokemon::RegionManager>();
+		Common::InstanceCollection::getInstance<Common::TextureManager>().addTexture("../Resources/Pokemon/TileSheets/TileSheet.png", "Tiles");
 		gameScene = new Pokemon::GameScene();
 	}
 	else {

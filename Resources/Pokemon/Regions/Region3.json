@@ -1,0 +1,235 @@
+{  
+  "RegionName": "Region3",
+  "Width": 5,
+  "Height": 5,
+  "Entities": [
+    {
+      "RegionX": 0,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 1,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 2,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 3,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 4,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 0,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 1,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": true,
+      "ViewPort": "0,0,32,32",
+      "TargetRegionName": "Region2",
+      "TargetRegionX": 9,
+      "TargetRegionY": 1
+    },
+    {
+      "RegionX": 1,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 2,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 3,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 4,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 0,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 1,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 2,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 3,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 4,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 0,
+      "RegionY": 3,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 1,
+      "RegionY": 3,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 2,
+      "RegionY": 3,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 3,
+      "RegionY": 3,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 4,
+      "RegionY": 3,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 0,
+      "RegionY": 4,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 1,
+      "RegionY": 4,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 2,
+      "RegionY": 4,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 3,
+      "RegionY": 4,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    },
+    {
+      "RegionX": 4,
+      "RegionY": 4,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false,
+      "ViewPort": "0,0,32,32"
+    }
+  ]
+}

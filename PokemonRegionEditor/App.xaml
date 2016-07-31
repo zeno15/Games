@@ -1,0 +1,24 @@
+﻿<Application 
+    x:Class="PokemonRegionEditor.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:PokemonRegionEditor"
+    xmlns:ViewModels="clr-namespace:PokemonRegionEditor.ViewModels"
+    xmlns:Views="clr-namespace:PokemonRegionEditor.Views"
+    xmlns:Presentation="clr-namespace:PokemonRegionEditor.Presentation"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type ViewModels:HomeScreenViewModel}">
+            <Views:HomeScreenView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:EditRegionViewModel}">
+            <Views:EditRegionView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:EnterNewRegionNameDialogViewModel}">
+            <Views:EnterNewRegionNameDialogView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:EditRegionSideBarViewModel}">
+            <Views:EditRegionSideBarView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>

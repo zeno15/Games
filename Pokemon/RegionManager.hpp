@@ -10,6 +10,7 @@ namespace Common {
 
 namespace Pokemon {
 	class Region;
+	class RegionEntity;
 	class RegionManager : public Common::Manager {
 	public:
 
@@ -21,6 +22,10 @@ namespace Pokemon {
 		void setCurrentRegion(Region *_region);
 		void setCurrentRegion(const std::string& _regionName);
 		void addRegion(Region *_region);
+		Region& getRegion(const std::string& _regionName);
+
+		bool jumpRegion(const std::string& _targetRegion, unsigned int _x, unsigned int _y, RegionEntity *_entity, bool _updateCurrentRegion);
+		bool hasRegion(const std::string& _regionName) const;
 
 	private:
 		RegionManager();

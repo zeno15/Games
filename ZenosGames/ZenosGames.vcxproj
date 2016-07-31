@@ -190,7 +190,13 @@
     <Font Include="..\Resources\Fonts\MineSweeper\arial.ttf" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\Resources\Pokemon\TileSheets\TileSheet.png" />
     <Image Include="..\Resources\Textures\MineSweeper\Atlas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\Pokemon\Regions\NewRegion.json" />
+    <None Include="..\Resources\Pokemon\Regions\Region2.json" />
+    <None Include="..\Resources\Pokemon\Regions\Region3.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

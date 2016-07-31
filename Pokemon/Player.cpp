@@ -4,7 +4,8 @@
 
 namespace Pokemon {
 
-	Player::Player() {}
+	Player::Player() :
+	Character(true) {}
 
 
 	Player::~Player() {}

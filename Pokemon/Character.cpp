@@ -11,7 +11,8 @@
 
 namespace Pokemon {
 
-	Character::Character() {}
+	Character::Character(bool _canJumpRegions) :
+	RegionEntity(_canJumpRegions) {}
 
 
 	Character::~Character() {}
@@ -25,7 +26,12 @@ namespace Pokemon {
 				m_Position = m_TargetPosition;
 				auto& region = Common::InstanceCollection::getInstance<RegionManager>();
 
-				region.getCurrentRegion()->getTile(static_cast<int>(m_Position.x), static_cast<int>(m_Position.y)).onEntityEntered(this);
+				Tile& t = region.getCurrentRegion()->getTile(static_cast<int>(m_Position.x), static_cast<int>(m_Position.y));
+
+				if (t.isRegionJumper()) {
+					std::cout << "RegionJumper" << std::endl;
+				}
+				t.onEntityEntered(this);
 			}
 			else {
 				m_Position += Common::Orientation::directionToVector(m_Direction) * movement;
@@ -45,7 +51,7 @@ namespace Pokemon {
 		if (m_Direction == _direction) {
 			// Already facing, so start moving
 			m_TargetPosition += Common::Orientation::directionToVector(_direction);
-			if (region.getCurrentRegion()->canMoveTo(static_cast<int>(m_TargetPosition.x), static_cast<int>(m_TargetPosition.y))) {
+			if (region.getCurrentRegion()->canMoveTo(static_cast<int>(m_TargetPosition.x), static_cast<int>(m_TargetPosition.y), this)) {
 				region.getCurrentRegion()->getTile(static_cast<unsigned int>(m_Position.x), static_cast<unsigned int>(m_Position.y)).free();
 				region.getCurrentRegion()->getTile(static_cast<unsigned int>(m_TargetPosition.x), static_cast<unsigned int>(m_TargetPosition.y)).reserve();
 				region.getCurrentRegion()->getTile(static_cast<int>(m_Position.x), static_cast<int>(m_Position.y)).onEntityLeave(this);

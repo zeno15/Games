@@ -42,6 +42,9 @@
     <ClCompile Include="RegionJumper.cpp">
       <Filter>Region\Tiles</Filter>
     </ClCompile>
+    <ClCompile Include="RegionEntity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameScene.hpp">
@@ -67,6 +70,10 @@
     </ClInclude>
     <ClInclude Include="RegionJumper.hpp">
       <Filter>Region\Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="JSON.hpp" />
+    <ClInclude Include="RegionEntity.hpp">
+      <Filter>Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

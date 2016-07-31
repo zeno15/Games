@@ -2,21 +2,24 @@
 
 #include <iostream>
 
+#include "../Common/InstanceCollection.hpp"
+#include "../Common/TextureManager.hpp"
+
 namespace Pokemon {
 	const float Tile::Width = 32.0f;
 	const float Tile::Height = 32.0f;
 
-	Tile::Tile(unsigned int _x, unsigned int _y) :
+	Tile::Tile(unsigned int _x, unsigned int _y, unsigned int _spritesheetX, unsigned int _spritesheetY, bool _isRegionJumper /*= false*/) :
 		m_X(_x),
 		m_Y(_y),
-		m_IsFree(true) {
-		float thicknesss = 1.0f;
-		m_Graphics = sf::RectangleShape(sf::Vector2f(Width - thicknesss * 2, Height - thicknesss * 2));
-		m_Graphics.setPosition(sf::Vector2f(m_X * Width, m_Y * Height));
-		m_Graphics.setOutlineColor(m_IsFree ? sf::Color::Green : sf::Color::Red);
-		m_Graphics.setFillColor(sf::Color(56, 56, 56));
-		m_Graphics.setOutlineThickness(thicknesss);
-		m_Graphics.setOrigin(-thicknesss, -thicknesss);
+		m_SpriteSheetX(_spritesheetX),
+		m_SpriteSheetY(_spritesheetY),
+		m_IsFree(true),
+		m_IsRegionJumper(_isRegionJumper) {
+		
+		m_Sprite.setTexture(Common::InstanceCollection::getInstance<Common::TextureManager>().getTexture("Tiles"));
+		m_Sprite.setTextureRect(sf::IntRect(_spritesheetX * Width, _spritesheetY * Height, Width, Height));
+		m_Sprite.setPosition(sf::Vector2f(m_X * Width, m_Y * Height));
 	}
 
 
@@ -29,16 +32,17 @@ namespace Pokemon {
 	}
 
 	void Tile::draw(sf::RenderTarget & _target, sf::RenderStates _states) const {
-		_target.draw(m_Graphics, _states);
+		//_target.draw(m_Graphics, _states);
+		_target.draw(m_Sprite, _states);
 	}
 
-	void Tile::onEntityEntered(Entity *_entity) {
+	void Tile::onEntityEntered(RegionEntity *_entity) {
 
 	}
-	void Tile::onEntityLeave(Entity *_entity) {
+	void Tile::onEntityLeave(RegionEntity *_entity) {
 
 	}
-	void Tile::onEntityMovedWithin(Entity *_entity) {
+	void Tile::onEntityMovedWithin(RegionEntity *_entity) {
 
 	}
 
@@ -49,18 +53,16 @@ namespace Pokemon {
 		return m_Y;
 	}
 
+	bool Tile::isRegionJumper(void) const {
+		return m_IsRegionJumper;
+	}
 	bool Tile::isFree(void) const {
 		return m_IsFree;
 	}
 	void Tile::reserve(void) {
 		m_IsFree = false;
-		m_Graphics.setOutlineColor(m_IsFree ? sf::Color::Green : sf::Color::Red);
 	}
 	void Tile::free(void) {
 		m_IsFree = true;
-		m_Graphics.setOutlineColor(m_IsFree ? sf::Color::Green : sf::Color::Red);
-	}
-	void Tile::setFillColor(const sf::Color& _color) {
-		m_Graphics.setFillColor(_color);
 	}
 }

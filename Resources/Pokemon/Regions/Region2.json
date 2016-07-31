@@ -1,0 +1,253 @@
+{
+  "RegionName": "Region2",
+  "Width": 10,
+  "Height": 3,
+  "Entities": [
+    {
+      "RegionX": 0,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 1,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 2,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 3,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 4,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 5,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 6,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 7,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 8,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 9,
+      "RegionY": 0,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 0,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 1,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": true,
+      "TargetRegionName": "NewRegion",
+      "TargetRegionX": 9,
+      "TargetRegionY": 1
+    },
+    {
+      "RegionX": 1,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 2,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 3,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 4,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 5,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 6,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 7,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 8,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 9,
+      "RegionY": 1,
+      "SpriteSheetIndexX": 1,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": true,
+      "TargetRegionName": "Region3",
+      "TargetRegionX": 0,
+      "TargetRegionY": 1
+    },
+    {
+      "RegionX": 0,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 1,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 2,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 3,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 4,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 5,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 6,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 7,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 8,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    },
+    {
+      "RegionX": 9,
+      "RegionY": 2,
+      "SpriteSheetIndexX": 0,
+      "SpriteSheetIndexY": 0,
+      "EntityCanEnter": true,
+      "IsRegionJumper": false
+    }
+  ]
+}

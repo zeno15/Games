@@ -21,8 +21,10 @@
   <ItemGroup>
     <ClInclude Include="Character.hpp" />
     <ClInclude Include="GameScene.hpp" />
+    <ClInclude Include="JSON.hpp" />
     <ClInclude Include="Player.hpp" />
     <ClInclude Include="Region.hpp" />
+    <ClInclude Include="RegionEntity.hpp" />
     <ClInclude Include="RegionJumper.hpp" />
     <ClInclude Include="RegionManager.hpp" />
     <ClInclude Include="Tile.hpp" />
@@ -33,6 +35,7 @@
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Region.cpp" />
+    <ClCompile Include="RegionEntity.cpp" />
     <ClCompile Include="RegionJumper.cpp" />
     <ClCompile Include="RegionManager.cpp" />
     <ClCompile Include="Tile.cpp" />

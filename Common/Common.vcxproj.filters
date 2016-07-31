@@ -13,6 +13,9 @@
     <Filter Include="Utility">
       <UniqueIdentifier>{15e965e5-2547-42da-a3fb-49696ec0b808}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{243b612e-60cf-4d43-9cb7-0887d0b5a292}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InstanceCollection.hpp">
@@ -46,6 +49,7 @@
     <ClInclude Include="VectorMath.hpp">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="GUIBase.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InstanceCollection.cpp">
@@ -76,5 +80,6 @@
     <ClCompile Include="VectorMath.cpp">
       <Filter>Utility</Filter>
     </ClCompile>
+    <ClCompile Include="GUIBase.cpp" />
   </ItemGroup>
 </Project>

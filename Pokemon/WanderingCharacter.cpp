@@ -7,6 +7,7 @@
 namespace Pokemon {
 
 	WanderingCharacter::WanderingCharacter() :
+	Character(false),
 	m_AccumulatedTime(0.0f) {
 		refreshWanderTime(2.5f, 5.0f);
 	}

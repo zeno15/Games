@@ -1,13 +1,13 @@
 #pragma once
 
-#include "../Common/Entity.hpp"
+#include "RegionEntity.hpp"
 #include "../Common/Orientation.hpp"
 
 namespace Pokemon {
 
-	class Character : public Common::Entity {
+	class Character : public RegionEntity {
 	public:
-		Character();
+		Character(bool _canJumpRegions);
 		~Character();
 
 		// Inherited via Entity
@@ -19,8 +19,6 @@ namespace Pokemon {
 		void move(Common::Orientation::Direction _direction);
 
 	protected:
-		sf::Vector2f m_Position;
-		sf::Vector2f m_TargetPosition;
 		Common::Orientation::Direction m_Direction;
 	};
 
