@@ -20,9 +20,17 @@
         <DataTemplate x:Key="SingleTileDataTemplate">
             <Button 
                 Width="32" 
-                Height="32" 
-                Command="{Binding Path=DataContext.ButtonPressedCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
-                CommandParameter="{Binding}" >
+                Height="32" >
+                <Button.InputBindings>
+                    <MouseBinding 
+                        Command="{Binding Path=DataContext.ButtonPressedCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                        CommandParameter="{Binding}"
+                        MouseAction="LeftClick" />
+                    <MouseBinding
+                        Command="{Binding Path=DataContext.ButtonPressedRightCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                        CommandParameter="{Binding}"
+                        MouseAction="RightClick" />
+                </Button.InputBindings>
                 <Button.Background>
                     <ImageBrush 
                         Viewport="{Binding ViewPort}"

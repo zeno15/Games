@@ -12,6 +12,7 @@ namespace PokemonRegionEditor.ViewModels {
         private int selectedIndex;
         private ObservableCollection<ITabItem> viewModels;
         private ICommand saveRegionCommand;
+        private ICommand closeRegionCommand;
         #endregion
 
         #region Constructors
@@ -21,6 +22,20 @@ namespace PokemonRegionEditor.ViewModels {
             viewModels.Add(new HomeScreenViewModel());
 
             ServiceContainer.Current.GetService<INotificationService>().NotifyCreateNewRegion += MainWindowViewModel_NotifyCreateNewRegion;
+            ServiceContainer.Current.GetService<INotificationService>().NotifyLoadExistingRegion += MainWindowViewModel_NotifyLoadExistingRegion;
+        }
+
+        private void MainWindowViewModel_NotifyLoadExistingRegion(object sender, LoadExistingRegionEventArgs e) {
+            var loaded = EditRegionViewModel.LoadFromFile(e.RegionName);
+
+            if (loaded == null) {
+                System.Windows.MessageBox.Show("Failed to load " + e.RegionName);
+                throw new InvalidOperationException();
+            }
+
+            viewModels.Add(loaded);
+            SelectedIndex = viewModels.Count - 1;
+            NotifyPropertyChanged(nameof(Items));
         }
 
         #endregion
@@ -32,11 +47,23 @@ namespace PokemonRegionEditor.ViewModels {
             NotifyPropertyChanged(nameof(Items));
         }
 
-        private void SaveRegion(object obj) {
+
+        
+
+    private void SaveRegion(object obj) {
             (SelectedItem as EditRegionViewModel)?.TrySave();
         }
 
         private bool SaveRegionCanExecute(object obj) {
+            return SelectedItem is EditRegionViewModel;
+        }
+
+        private void CloseRegion(object obj) {
+            viewModels.Remove(SelectedItem);
+            SelectedIndex = 0;
+        }
+
+        private bool CloseRegionCanExecute(object obj) {
             return SelectedItem is EditRegionViewModel;
         }
 
@@ -45,6 +72,9 @@ namespace PokemonRegionEditor.ViewModels {
         #region Commands
         public ICommand SaveRegionCommand {
             get { return saveRegionCommand ?? (saveRegionCommand = new DelegateCommand(SaveRegion, SaveRegionCanExecute)); }
+        }
+        public ICommand CloseRegionCommand {
+            get { return closeRegionCommand ?? (closeRegionCommand = new DelegateCommand(CloseRegion, CloseRegionCanExecute)); }
         }
         #endregion
 
@@ -62,6 +92,7 @@ namespace PokemonRegionEditor.ViewModels {
                 NotifyPropertyChanged(nameof(SelectedIndex));
                 NotifyPropertyChanged(nameof(SelectedItem));
                 (SaveRegionCommand as DelegateCommand)?.RaiseCanExecuteChanged();
+                (CloseRegionCommand as DelegateCommand)?.RaiseCanExecuteChanged();
             }
         }
         #endregion

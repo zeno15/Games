@@ -23,12 +23,11 @@ namespace PokemonRegionEditor.ViewModels {
         #region Methods
         private void EditExistingRegion(object obj) {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "RegionFiles (*.reg)|*.reg";
-            openFileDialog.InitialDirectory = "C:";
+            openFileDialog.Filter = "Pokemon Region Files (*.json)|*.json";
             if (openFileDialog.ShowDialog() == true) {
-                System.Windows.MessageBox.Show(openFileDialog.FileName);
-            }
+                ServiceContainer.Current.GetService<INotificationService>()?.LoadExistingRegion(new LoadExistingRegionEventArgs(openFileDialog.FileName));
 
+            }
         }
         private void CreateNewRegion(object obj) {
             var dialog = new EnterNewRegionNameDialogViewModel();

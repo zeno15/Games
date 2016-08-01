@@ -68,6 +68,7 @@
     <Compile Include="Enumerations\DialogEnumerations.cs" />
     <Compile Include="Enumerations\TileFilterEnumerations.cs" />
     <Compile Include="EventArguments\CreateNewRegionEventArgs.cs" />
+    <Compile Include="EventArguments\LoadExistingRegionEventArgs.cs" />
     <Compile Include="Models\Tile.cs" />
     <Compile Include="Presentation\Interfaces\ITabItem.cs" />
     <Compile Include="Presentation\Interfaces\IDialog.cs" />

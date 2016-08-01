@@ -28,6 +28,42 @@
                 <x:Type TypeName="Enums:TileFilter"/>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
+
+
+        <DataTemplate x:Key="SingleSpriteDataTemplate">
+            <Button
+                Margin="3"
+                Width="32" 
+                Height="32" 
+                Command="{Binding Path=DataContext.SpriteClickedCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                CommandParameter="{Binding}" >
+                <Button.Background>
+                    <ImageBrush 
+                        Viewport="{Binding}"
+                        ImageSource="C:\Users\Mark\Documents\Visual Studio 2015\Projects\ZenosGames\Resources\Pokemon\TileSheets\TileSheet.png">
+                    </ImageBrush>
+                </Button.Background>
+                <Button.ToolTip>
+                    <ToolTip>
+                        <Grid>
+                            <TextBlock Text="{Binding}" />
+                        </Grid>
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+        </DataTemplate>
+
+        <DataTemplate x:Key="SpriteCellRowDataTemplate">
+            <ItemsControl ItemsSource="{Binding}" ItemTemplate="{DynamicResource SingleSpriteDataTemplate}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </DataTemplate>
+
+
     </UserControl.Resources>
     <DockPanel Background="Green">
         <StackPanel DockPanel.Dock="Bottom" Orientation="Vertical" Visibility="{Binding SelectedTile, Converter={StaticResource NullToVisibilityConverter}}">
@@ -112,17 +148,37 @@
                 <TextBox Grid.Column="1" Grid.Row="2" Width="60" Text="{Binding SelectedTile.TargetRegionY, UpdateSourceTrigger=PropertyChanged}" PreviewTextInput="TextBox_PreviewTextInput"/>
             </Grid>
         </StackPanel>
-        <Grid Background="Red">
+        <Grid Background="Red" DockPanel.Dock="Top">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Label Grid.Row="0" Grid.Column="0" Content="Filter tile stuff" />
-            <ComboBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" Height="24" ItemsSource="{Binding Source={StaticResource enumValues}}" SelectedItem="{Binding TileFilter}"/>
+            <Grid 
+                Grid.Column="0" 
+                Grid.Row="0" 
+                Grid.ColumnSpan="2" 
+                HorizontalAlignment="Center" 
+                Margin="8"
+                Width="32" 
+                Height="32">
+                <Grid.Background>
+                    <ImageBrush 
+                        Viewport="{Binding SelectedRect}"
+                        ImageSource="C:\Users\Mark\Documents\Visual Studio 2015\Projects\ZenosGames\Resources\Pokemon\TileSheets\TileSheet.png">
+                    </ImageBrush>
+                </Grid.Background>
+            </Grid>
+            <Label Grid.Row="1" Grid.Column="0" Content="Filter tile stuff" />
+            <ComboBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Height="24" ItemsSource="{Binding Source={StaticResource enumValues}}" SelectedItem="{Binding TileFilter}"/>
+
+            <ScrollViewer Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="2" HorizontalScrollBarVisibility="Auto">
+                <ItemsControl ItemsSource="{Binding SpriteSheetViewPorts}" ItemTemplate="{DynamicResource SpriteCellRowDataTemplate}" />
+            </ScrollViewer>
         </Grid>
     </DockPanel>
 </UserControl>

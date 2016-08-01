@@ -18,6 +18,10 @@ namespace PokemonRegionEditor.Services {
         public void CreateNewRegion(CreateNewRegionEventArgs args) {
             NotifyCreateNewRegion?.Invoke(this, args);
         }
+
+        public void LoadExistingRegion(LoadExistingRegionEventArgs args) {
+            NotifyLoadExistingRegion?.Invoke(this, args);
+        }
         #endregion
 
         #region Commands
@@ -25,6 +29,7 @@ namespace PokemonRegionEditor.Services {
 
         #region Properties
         public event EventHandler<CreateNewRegionEventArgs> NotifyCreateNewRegion;
+        public event EventHandler<LoadExistingRegionEventArgs> NotifyLoadExistingRegion;
         #endregion
 
     }

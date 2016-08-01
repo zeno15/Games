@@ -11,5 +11,8 @@ namespace PokemonRegionEditor.Services.Interfaces {
 
         void CreateNewRegion(CreateNewRegionEventArgs args);
 
+        event EventHandler<LoadExistingRegionEventArgs> NotifyLoadExistingRegion;
+
+        void LoadExistingRegion(LoadExistingRegionEventArgs args);
     }
 }

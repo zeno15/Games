@@ -32,6 +32,9 @@ namespace PokemonRegionEditor.Models {
         public bool ShouldSerializeTargetRegionY() {
             return IsRegionJumper;
         }
+        public bool ShouldSerializeViewPort() {
+            return false;
+        }
 
         #endregion
 
